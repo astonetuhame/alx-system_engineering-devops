@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-# displays the content of the current working directory.
+# This script is displaying files in current dir without task numbers
 
-for i in *
+for f in *
 do
-    echo "$i" | cut -d'-' -f2
+	echo "${f/*-/}"
 done
